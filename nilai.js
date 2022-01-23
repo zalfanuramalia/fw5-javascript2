@@ -1,7 +1,7 @@
 function SeleksiNilai (awal, akhir, arr){
     if (awal < akhir && awal !== akhir){
         if (arr.length > 5){
-            const res = arr.filter(el => el > 5 && el < 20);
+            const res = arr.filter(el => el > awal && el < akhir);
             res.sort(function (a,b){
                 return a - b
             });
@@ -15,4 +15,4 @@ function SeleksiNilai (awal, akhir, arr){
     }
 }
 
-SeleksiNilai(5,  20, [2, 25, 4, 14, 17, 30, 8])
+SeleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8])
