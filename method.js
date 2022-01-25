@@ -52,14 +52,12 @@ console.log(angka4.join("_"));      //hasil: 1_2_3_4_5_a_b_c_d_e
 //7. toString() adalah metode yang digunakan secara internal oleh JavaScript ketika suatu objek perlu ditampilkan sebagai teks (seperti dalam HTML), atau ketika suatu objek perlu digunakan sebagai string.
 let text = ["Hello!", "Hai!"];
 let result = text.toString();
-console.log(result);
+console.log(result); // Output : Hello!,Hai!
 
 //8. reverse() adalah metode yang berfungsi untuk membalikkan urutan dari elemen di dalam array.
 var arr1 = [1,2,3,4,5,"a","b","c","d","e"];
-console.log(arr1.toString());         //hasil: 1,2,3,4,5,a,b,c,d,e
-  
-arr1.reverse();
-console.log(arr1.toString());         //hasil: e,d,c,b,a,5,4,3,2,1
+var arr2 = arr1.reverse();        
+console.log(arr2.toString());  //Output: e,d,c,b,a,5,4,3,2,1
 
 //9. slice() adalah metode yang berfungsi untuk memotong array menjadi array baru, atau menjadi sub-array dari asal.
 var arr1 = [1,2,3,4,"a","b","c","d"];
@@ -76,17 +74,14 @@ console.log(arr3.toString());         //hasil: a,b,c,d
 var arr4 = arr1.slice(-2)
 console.log(arr4.toString());         //hasil: c,d
   
-//slice dari index ke 5 dari akhir array sampai
-//index ke 2 dari akhir array
+//slice dari index ke 5 dari akhir array sampai index ke 2 dari akhir array
 var arr5 = arr1.slice(-5,-2)
 console.log(arr5.toString());         //hasil: 4,a,b
 
 //10. splice() adalah metode yang digunakan untuk memotong array, menambahkan array, atau melakukan keduanya sekaligus.
 var arr1 = [1,2,3,4,"a","b","c","d"];
-console.log(arr1.toString());     // hasil: 1,2,3,4,a,b,c,d
   
 //splice dari index ke 4
-var arr2 = arr1.splice(4)
+var arr2 = arr1.splice(4, 2)
   
-console.log(arr1.toString());     // hasil: 1,2,3,4
-console.log(arr2.toString());     // hasil: a,b,c,d
+console.log(arr1.toString());     // hasil: 1,2,3,4,b,c,d

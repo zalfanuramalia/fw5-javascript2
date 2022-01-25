@@ -15,4 +15,4 @@ function SeleksiNilai (awal, akhir, arr){
     }
 }
 
-SeleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8])
+SeleksiNilai(5, 5, [2, 25, 4])
